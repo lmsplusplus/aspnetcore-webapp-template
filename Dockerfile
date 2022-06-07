@@ -4,4 +4,6 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-CMD dotnet run
+RUN dotnet build
+
+CMD dotnet run --no-build
